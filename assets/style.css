@@ -1,0 +1,236 @@
+/* Para pagina */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 30vh;
+}
+
+main {
+    min-height: 60vh;
+    border: 2px solid transparent;
+    background-color: gray;
+}
+
+footer {
+    min-height: 10vh;
+    /* border: 2px solid red; */
+}
+
+/* Para imagenes */
+
+.img1 {
+    width: 15rem;
+    height: 25rem;
+}
+
+.img2 {
+    width: 15rem;
+    height: 20rem;
+}
+
+/* Header */
+
+.h1 {
+    height: 7vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+.home {
+    color: black;
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 30px;
+}
+
+header{
+    background-image: url(../images/image01.jpg);
+    background-position-x: 47%;
+    background-position-y:49% ;
+}
+
+header > .h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    color: white;
+}
+
+/* Para el main */
+
+.main1 {
+    background-color: white;
+    border: 20px solid white;
+    border-radius: 50px;
+    border-top: 40px;
+    border-left: 40px;
+    border-right: 40px;
+    margin: 1%;
+}
+
+.text1 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.main11 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Para la segunda parte del main */
+
+.text3 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: .5rem;
+}
+
+.cart {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.cartas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+/* Para la tercera parte del main */
+
+.text4 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: .5rem;
+}
+
+.main33 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+table,
+tr,
+th,
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+}
+
+table {
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    width: 10rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+/* Para el footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    background-color: black;
+    color: white;
+}
+
+.maill {
+    color: white;
+}
+
+
+/* MEDIA */
+
+/* Para 425 */
+
+@media only screen and (max-width:425px) {
+
+    header {
+        min-height: 20vh;
+        background-position: center;
+        background-size: cover;
+    }
+    .h1 {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        height: 15vh;
+    }
+    .home {
+        color: black;
+        background-color: white;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+    }
+}
+
+/* 425PX A 768PX */
+
+@media only screen and (min-width:425px) and (max-width:768px) {
+    footer {
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+    }
+    .h1 {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* 768PX A 1024PX */
+@media only screen and (min-width:768px) and (max-width:1024px){
+    footer {
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: row;
+        background-color: black;
+        color: white;
+    }
+}
